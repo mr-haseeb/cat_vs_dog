@@ -14,3 +14,5 @@ for subdir, dirs, files in os.walk(images_dir):
         labeled_images.append([image_path, label])
 df = pd.DataFrame(labeled_images, columns=['images', 'labels'])
 df.to_csv(csv_path, encoding='utf-8', index=False)
+
+def
